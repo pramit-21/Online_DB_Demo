@@ -10,7 +10,7 @@
 <body style="font-family: Arial; text-align:center; margin-top:100px;">
 
 <h1 style="color:red;">
-Something Went Wrong
+Something Went Wrong, Please Try Again
 </h1>
 
 </body>
