@@ -13,9 +13,9 @@ public class DBConnection {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             con = DriverManager.getConnection(
-                    "jdbc:mysql://mysql-1e70e558-pramitpoddar007-1422.h.aivencloud.com:10266/EVENT?ssl-mode=REQUIRED",
-                    "avnadmin",
-                    "password");
+                    "DB_URL",
+                    "DB_USER",
+                    "DB_PASSWORD");
 
         } catch (Exception e) {
             e.printStackTrace();
