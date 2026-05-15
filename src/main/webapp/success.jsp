@@ -10,7 +10,7 @@
 <body style="font-family: Arial; text-align:center; margin-top:100px;">
 
 <h1 style="color:green;">
-Registration Successful
+Registration Successful. Now Enjoy!!
 </h1>
 
 </body>
