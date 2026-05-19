@@ -1,6 +1,6 @@
 package com.db;
 
-import java.io.FileInputStream;
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.Properties;
@@ -15,11 +15,11 @@ public class DBConnection {
 
             Properties p = new Properties();
 
-            FileInputStream fis =
-                    new FileInputStream(
-                    "src/main/resources/db.properties");
+            InputStream is =
+                DBConnection.class.getClassLoader()
+                .getResourceAsStream("db.properties");
 
-            p.load(fis);
+            p.load(is);
 
             String url = p.getProperty("url");
             String user = p.getProperty("username");
@@ -39,4 +39,3 @@ public class DBConnection {
         return con;
     }
 }
-
